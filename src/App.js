@@ -1,6 +1,7 @@
 import React from "react";
 import HomePage from "./Pages/HomePage/home.component";
 import ShopPage from "./Pages/Shop/shop.component";
+import CheckoutPage from "./Pages/Checkout/checkout.component";
 import SignInUp from "./Component/SignIn-SignUp/SignIn-Up.component";
 import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
 import "./App.css";
@@ -52,6 +53,7 @@ class App extends React.Component {
           <Header />
           <Switch>
             <Route path="/shop" component={ShopPage} />
+            <Route exact path="/checkout" component={CheckoutPage} />
             <Route
               exact
               path="/signin"

@@ -1,16 +1,17 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import Store from "./Redux/Store";
+import { store, persistor } from "./Redux/Store";
 import App from "./App";
 import { Provider } from "react-redux";
+import { PersistGate } from "redux-persist/integration/react";
 import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(
-  <Provider store={Store}>
-    <React.StrictMode>
+  <Provider store={store}>
+    <PersistGate persistor={persistor}>
       <App />
-    </React.StrictMode>
+    </PersistGate>
   </Provider>,
   document.getElementById("root")
 );
