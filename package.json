@@ -8,7 +8,7 @@
     "@testing-library/user-event": "^7.1.2",
     "firebase": "^7.13.1",
     "grpc": "^1.24.2",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.1.2",
